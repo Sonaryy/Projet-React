@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Nanum+Brush+Script&family=Outfit:wght@100..900&family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../../public/images/space2.jpg);
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+h1 {
+    padding-top: 60px;
+    font-size: 50px;
+    margin-bottom: 70px;
+    color: #4b9ee2;
+    text-align: center;
+}
+
+nav {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px;
+    background-color: #000;
+}
+
+.logoCase {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+
+}
+
+.logoCase h5 {
+    color: #fff;
+    font-size: 15px;
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 10px;
+    margin: 0px 10px;
+
+}
+
+.navList {
+    list-style: none;
+    margin-right: 10%;
+}
+
+nav li {
+    display: inline;
+    padding-right: 10px;
+    margin: 10px 30px;
+}
+
+nav li:last-child {
+    border: 1px solid #fff;
+    padding: 5px 20px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: "Chakra Petch", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+nav li:nth-child(-n+3) a:hover {
+    border-bottom: 1px solid #4b9ee2;
+    padding-bottom: 10px;
+    color: #4b9ee2;
+}
+
+nav li:last-child:hover {
+    background-color: #4b9ee2;
+    border: 2px solid #4b9ee2;
+}
+
+/*Gallery*/
+.Gallery {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.Gallery .Case {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 195px;
+    width: 350px;
+    border-radius: 10px;
+    transition: 400ms;
+    position: relative;
+}
+
+.Gallery .Case img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.Gallery .Case:hover {
+    transform: scale(1.1);
+}
+
+.Gallery .Case:hover img {
+    box-shadow: 0 0 10px #4b9ee2;
+}
+
+.Gallery:hover>.Case:not(:hover) {
+    filter: blur(2px);
+    transform: scale(0.9);
+}
+
+.viewmore {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    margin: 50px auto;
+}
+
+.viewmore a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #4b9ee2;
+    font-family: "Chakra Petch", serif;
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+.viewmore a:hover {
+    background-color: #3786c6;
+}
+
+@media (max-width: 480px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    nav {
+        margin-left: -50px;
+    }
+
+    .logoCase {
+        margin-left: 50px;
+    }
+
+    .navList {
+        margin-left: -300px;
+        visibility: hidden;
+        display: block;
+    }
+}

@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Nanum+Brush+Script&family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Nanum+Brush+Script&family=Outfit:wght@100..900&family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+@keyframes tour {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-image: url(../../public/images/space.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000;
+
+}
+
+.moon {
+    width: 500px;
+    animation: tour 50s linear infinite;
+}
+
+.moonCase {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    right: 100px;
+    top: 150px;
+}
+
+
+header {
+    width: 100%;
+    height: 500px;
+
+}
+
+.h1 {
+    font-family: "Chakra Petch", serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    position: relative;
+    font-size: 70px;
+    margin-top: 150px;
+    margin-right: 500px;
+    top: 0;
+}
+
+nav {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px;
+    background-color: #000;
+}
+
+.logoCase {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+
+}
+
+.logoCase h5 {
+    color: #fff;
+    font-size: 15px;
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 10px;
+    margin: 0px 10px;
+
+}
+
+.navList {
+    list-style: none;
+    margin-right: 10%;
+}
+
+nav li {
+    display: inline;
+    padding-right: 10px;
+    margin: 10px 30px;
+}
+
+nav li:last-child {
+    border: 1px solid #fff;
+    padding: 5px 20px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: "Chakra Petch", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+nav li:nth-child(-n+3) a:hover {
+    border-bottom: 1px solid #4b9ee2;
+    padding-bottom: 10px;
+    color: #4b9ee2;
+}
+
+nav li:last-child:hover {
+    background-color: #4b9ee2;
+    border: 2px solid #4b9ee2;
+}
+
+.intro {
+    width: 40%;
+    position: relative;
+    top: 100px;
+    margin-left: 10%;
+}
+
+.intro div {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.intro div h2 {
+    color: #fff;
+    font-size: 70px;
+    margin: 5px;
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.intro p {
+    color: white;
+    width: 85%;
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;
+}
+
+
+.btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #4b9ee2;
+    font-family: "Chakra Petch", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px 50px;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+    top: 20px;
+}
+
+.btn:hover {
+    background-color: #3786c6;
+    color: #fff;
+}
+
+.cardContainer {
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background-color: #102036;
+    margin-top: 20%;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+
+.icon img {
+    width: 30%;
+}
+
+.card h2 {
+    font-family: "Chakra Petch", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+    color: white;
+}
+
+.card p {
+    color: white;
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-weight: 150;
+    font-style: normal;
+    font-size: 15px;
+    padding: 15px;
+
+
+}
+
+.card:hover {
+    background-color: #183153;
+}
+
+.science {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 100px;
+    background-color: #000;
+    border-bottom: 4px solid #4b9ee2;
+    border-right: 4px solid #4b9ee2;
+
+}
+
+.sc {
+    color: white;
+    font-size: 30px;
+    margin: 50px;
+    max-width: 50%;
+
+}
+
+
+.scTitle {
+
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.sc p {
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.sc a {
+    color: #fff;
+    background-color: #4b9ee2;
+    font-family: "Chakra Petch", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px 50px;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.sc a:hover {
+    background-color: #3786c6;
+    color: #fff;
+}
+
+
+.telescop {
+    width: 40%;
+}
+
+.telescop img {
+    width: 100%;
+}
+
+
+
+
+footer {
+    padding-top: 5px;
+    width: 100%;
+    background-color: #102036;
+    color: white;
+    text-align: center;
+    font-family: "Chakra Petch", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+footer img {
+    align-items: center;
+    width: 35px;
+    padding: 10px;
+    padding-left: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+footer img:hover {
+    transform: scale(1.3);
+}
+
+#whatsapp:hover {
+    content: url(../../public/images/whatsappCOLOR.png);
+    width: 35px;
+    align-items: center;
+    padding: 10px;
+    padding-left: 20px;
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1.3);
+}
+
+#email:hover {
+    content: url(../../public/images/emailCOLOR.png);
+    width: 35px;
+    align-items: center;
+    padding: 10px;
+    padding-left: 20px;
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1.3);
+}
+
+#instagram:hover {
+    content: url(../../public/images/instagramCOLOR.png);
+    width: 35px;
+    align-items: center;
+    padding: 10px;
+    padding-left: 20px;
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .navList {
+        visibility: hidden;
+    }
+
+    .logoCase {
+        margin-left: -20px;
+    }
+
+    .moonCase {
+        width: 200px;
+    }
+
+    .intro {
+        top: -50px;
+        width: 90%;
+        margin: 20px auto;
+        z-index: 2;
+    }
+
+    .intro div h2 {
+        font-size: 50px;
+    }
+
+    .intro p {
+        font-size: 18px;
+        text-shadow:
+            -1px -1px 0 black,
+            1px -1px 0 black,
+            -1px 1px 0 black,
+            1px 1px 0 black;
+    }
+
+    .btn {
+        font-size: 20px;
+        padding: 10px 30px;
+    }
+
+    /* Card section adjustments */
+    .cardContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: -100px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    /* Science section adjustments */
+    #science {
+        flex-direction: column;
+        align-items: center;
+        margin: 100px 0;
+    }
+
+    .scTitle {
+        font-size: 50px;
+    }
+
+    .sc {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .telescop {
+        width: 90%;
+        margin: 20px 0;
+    }
+
+    /* Footer adjustments */
+    footer {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    nav {
+        margin-left: -50px;
+    }
+
+    .logoCase {
+        margin-left: 50px;
+    }
+
+    .navList {
+        margin-left: -300px;
+        visibility: hidden;
+        display: block;
+    }
+
+    .moonCase {
+        visibility: hidden;
+        top: 110px;
+        width: 150px;
+        height: 150px;
+        margin-right: 150px;
+    }
+
+    .moon {
+
+        margin-right: 150px;
+        width: 200px;
+    }
+
+    .intro {
+        width: 100%;
+        top: 10px;
+        margin-left: 50px;
+        z-index: 2;
+    }
+
+    .intro div h2 {
+        font-size: 50px;
+    }
+
+    .intro p {
+        font-size: 18px;
+        text-shadow:
+            -1px -1px 0 black,
+            1px -1px 0 black,
+            -1px 1px 0 black,
+            1px 1px 0 black;
+    }
+
+    .btn {
+        font-size: 20px;
+        padding: 10px 30px;
+    }
+
+    /* Card section adjustments */
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: -100px;
+    }
+
+    .card {
+        width: 70%;
+    }
+
+    /* Science section adjustments */
+    #science {
+        flex-direction: column;
+        align-items: center;
+        margin: 90px 0;
+        margin-right: 10px;
+    }
+
+    .sc {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .telescop {
+        width: 90%;
+        margin: 20px 0;
+    }
+
+    /* Footer adjustments */
+    footer {
+        font-size: 14px;
+        margin-right: 10px;
+    }
+}

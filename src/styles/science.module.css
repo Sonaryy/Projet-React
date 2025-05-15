@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Nanum+Brush+Script&family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Nanum+Brush+Script&family=Outfit:wght@100..900&family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+@keyframes tr {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(../../public/images/space_2.jpg);
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+nav {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px;
+    background-color: #000;
+}
+
+.logoCase {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+
+}
+
+.logoCase h5 {
+    color: #fff;
+    font-size: 15px;
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 10px;
+    margin: 0px 10px;
+
+}
+
+.navList {
+    list-style: none;
+    margin-right: 10%;
+}
+
+nav li {
+    display: inline;
+    padding-right: 10px;
+    margin: 10px 30px;
+}
+
+nav li:last-child {
+    border: 1px solid #fff;
+    padding: 5px 20px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: "Chakra Petch", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+nav li:nth-child(-n+3) a:hover {
+    border-bottom: 1px solid #4b9ee2;
+    padding-bottom: 10px;
+    color: #4b9ee2;
+}
+
+nav li:last-child:hover {
+    background-color: #4b9ee2;
+    border: 2px solid #4b9ee2;
+}
+
+
+.astro {
+    position: absolute;
+    animation: tr 1s infinite alternate;
+    left: 65%;
+    top: 10%;
+}
+
+.astro img {
+    width: 50%;
+}
+
+.text {
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 15px;
+    background-color: #000;
+    color: white;
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-top: 5%;
+    padding: 30px;
+    border-left: 2px solid #4b9ee2;
+    border-bottom: 2px solid #4b9ee2;
+}
+
+.text h1 {
+    color: #4b9ee2;
+}
+
+b {
+    color: #042655;
+}
+
+@media (max-width: 480px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    nav {
+        margin-left: -50px;
+    }
+
+    .logoCase {
+        margin-left: 50px;
+    }
+
+    .navList {
+        margin-left: -300px;
+        visibility: hidden;
+        display: block;
+    }
+
+    .astro {
+        visibility: hidden;
+    }
+}
